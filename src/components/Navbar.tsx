@@ -20,7 +20,7 @@ export function Navbar() {
       className="sticky top-0 z-50 border-b border-[var(--sb-border)] backdrop-blur-md"
       style={{ backgroundColor: 'var(--sb-header-bg)' }}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
         {/* Zone 1: Brand Wordmark */}
         <a
           href="#top"
