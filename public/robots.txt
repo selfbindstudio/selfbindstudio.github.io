@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://selfbindstudio.github.io/sitemap.xml

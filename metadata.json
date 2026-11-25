@@ -1,0 +1,6 @@
+{
+  "name": "SelfBind: Strict App Blocker — SelfBind Studio",
+  "description": "Stop doomscrolling and break phone addiction with SelfBind: Strict App Blocker, Impulse Guard, and Distraction-Free Clean Browser. 100% private and on-device for Android.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

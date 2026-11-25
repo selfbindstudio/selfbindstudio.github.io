@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ==========================================================================
+   SelfBind 4-Theme Design Token System
+   Extracted directly from SelfBind's official Android screenshots & brand art
+   ========================================================================== */
+
+:root,
+[data-theme="classic-dark"] {
+  color-scheme: dark;
+  --sb-bg: #0c0d11;
+  --sb-bg-subtle: #111319;
+  --sb-surface: #151820;
+  --sb-surface-elevated: #1c202a;
+  --sb-surface-hover: #222733;
+  --sb-border: rgba(255, 255, 255, 0.08);
+  --sb-border-strong: rgba(255, 255, 255, 0.16);
+  --sb-text: #f3f5f8;
+  --sb-text-secondary: #b1b7c4;
+  --sb-text-muted: #828998;
+  --sb-accent: #5d9cdb;
+  --sb-accent-hover: #73ade6;
+  --sb-accent-ink: #08101a;
+  --sb-accent-soft: rgba(93, 156, 219, 0.14);
+  --sb-emerald: #47b881;
+  --sb-emerald-soft: rgba(71, 184, 129, 0.14);
+  --sb-amber: #d9a154;
+  --sb-amber-soft: rgba(217, 161, 84, 0.14);
+  --sb-glow-blue: rgba(54, 114, 194, 0.22);
+  --sb-glow-emerald: rgba(56, 163, 115, 0.14);
+  --sb-header-bg: rgba(12, 13, 17, 0.84);
+  --sb-shadow: 0 24px 64px -20px rgba(0, 0, 0, 0.72);
+}
+
+[data-theme="nordic-slate"] {
+  color-scheme: dark;
+  --sb-bg: #0e151f;
+  --sb-bg-subtle: #131c29;
+  --sb-surface: #172231;
+  --sb-surface-elevated: #1e2c3e;
+  --sb-surface-hover: #25354b;
+  --sb-border: rgba(154, 188, 224, 0.14);
+  --sb-border-strong: rgba(154, 188, 224, 0.26);
+  --sb-text: #edf3f9;
+  --sb-text-secondary: #aec0d4;
+  --sb-text-muted: #7f95ae;
+  --sb-accent: #68acec;
+  --sb-accent-hover: #82bbf0;
+  --sb-accent-ink: #081320;
+  --sb-accent-soft: rgba(104, 172, 236, 0.16);
+  --sb-emerald: #42c295;
+  --sb-emerald-soft: rgba(66, 194, 149, 0.16);
+  --sb-amber: #e2ad60;
+  --sb-amber-soft: rgba(226, 173, 96, 0.16);
+  --sb-glow-blue: rgba(71, 142, 212, 0.24);
+  --sb-glow-emerald: rgba(56, 182, 144, 0.14);
+  --sb-header-bg: rgba(14, 21, 31, 0.86);
+  --sb-shadow: 0 24px 64px -20px rgba(4, 10, 18, 0.78);
+}
+
+[data-theme="sky-daylight"] {
+  color-scheme: light;
+  --sb-bg: #f5f8fc;
+  --sb-bg-subtle: #ebf1f8;
+  --sb-surface: #ffffff;
+  --sb-surface-elevated: #f1f5fa;
+  --sb-surface-hover: #e5edf7;
+  --sb-border: rgba(15, 39, 68, 0.1);
+  --sb-border-strong: rgba(15, 39, 68, 0.2);
+  --sb-text: #0f1b2d;
+  --sb-text-secondary: #394d66;
+  --sb-text-muted: #5a6f87;
+  --sb-accent: #2264bf;
+  --sb-accent-hover: #1b54a4;
+  --sb-accent-ink: #ffffff;
+  --sb-accent-soft: rgba(34, 100, 191, 0.1);
+  --sb-emerald: #137f54;
+  --sb-emerald-soft: rgba(19, 127, 84, 0.1);
+  --sb-amber: #a86610;
+  --sb-amber-soft: rgba(168, 102, 16, 0.11);
+  --sb-glow-blue: rgba(34, 100, 191, 0.1);
+  --sb-glow-emerald: rgba(19, 127, 84, 0.08);
+  --sb-header-bg: rgba(245, 248, 252, 0.88);
+  --sb-shadow: 0 22px 48px -22px rgba(15, 39, 68, 0.16);
+}
+
+[data-theme="zen-sand"] {
+  color-scheme: light;
+  --sb-bg: #f4f1ea;
+  --sb-bg-subtle: #ebe6db;
+  --sb-surface: #fcfbf7;
+  --sb-surface-elevated: #efeae0;
+  --sb-surface-hover: #e5dfd2;
+  --sb-border: rgba(54, 44, 30, 0.12);
+  --sb-border-strong: rgba(54, 44, 30, 0.22);
+  --sb-text: #1e1a15;
+  --sb-text-secondary: #4a4237;
+  --sb-text-muted: #6c6254;
+  --sb-accent: #2b5f82;
+  --sb-accent-hover: #224e6b;
+  --sb-accent-ink: #ffffff;
+  --sb-accent-soft: rgba(43, 95, 130, 0.11);
+  --sb-emerald: #267353;
+  --sb-emerald-soft: rgba(38, 115, 83, 0.11);
+  --sb-amber: #995d16;
+  --sb-amber-soft: rgba(153, 93, 22, 0.11);
+  --sb-glow-blue: rgba(43, 95, 130, 0.09);
+  --sb-glow-emerald: rgba(38, 115, 83, 0.08);
+  --sb-header-bg: rgba(244, 241, 234, 0.9);
+  --sb-shadow: 0 22px 48px -22px rgba(54, 44, 30, 0.14);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--sb-bg);
+  color: var(--sb-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--sb-bg);
+  color: var(--sb-text);
+  transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Optical compensation for dark themes */
+[data-theme="classic-dark"] body,
+[data-theme="nordic-slate"] body {
+  letter-spacing: 0.005em;
+}
+
+/* Signature SelfBind gradient hairline (cobalt steel-blue to emerald) */
+.selfbind-rule {
+  background: linear-gradient(90deg, var(--sb-accent) 0%, var(--sb-emerald) 100%);
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid var(--sb-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
