@@ -1,6 +1,6 @@
 export type ThemeId = 'classic-dark' | 'nordic-slate' | 'sky-daylight' | 'zen-sand';
 
-export const GOOGLE_PLAY_URL = '[PASTE_YOUR_GOOGLE_PLAY_URL_HERE]';
+export const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.selfbind.app';
 export const PRIVACY_POLICY_URL = 'https://sites.google.com/view/selfbind-privacy/';
 export const SUPPORT_EMAIL = 'vishnuaravind.mech@gmail.com';
 export const GITHUB_REPO_URL = 'https://github.com/VISHNU-ARAVIND-99/LockIn';
